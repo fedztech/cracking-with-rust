@@ -1,6 +1,4 @@
 
-use std::collections::HashMap;
-
 // 1.2 Given two strings, wriea a method to decide if one is a permutation of the other.
 
 #[cfg(test)]
