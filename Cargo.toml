@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+
+[[include]]
+path = "src/ex_02"
+
+[[include]]
+path = "src/data_structures"
