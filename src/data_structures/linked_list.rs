@@ -1,9 +1,5 @@
 #[cfg(test)]
 pub mod tests {
-
-    use std::cell::RefCell;
-    use std::rc::Rc;
-
     use super::*;
 
     #[test]
@@ -71,7 +67,7 @@ pub mod linked_list {
         }
     }
 
-    /// Recursively finds the last node in a single lined list
+    /// Recursively finds the last node in a single linked list
     pub fn find_last_node<T>(
         current_node: Rc<RefCell<LinkedListNode<T>>>,
     ) -> Rc<RefCell<LinkedListNode<T>>> {
