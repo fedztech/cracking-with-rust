@@ -1,14 +1,12 @@
 // Remove Dups: Write code to remove duplicates from an unsorted linked list.
 // With and without a temporary buffer.
 
-use crate::data_structures;
-
 #[cfg(test)]
 pub mod tests {
 
     use super::*;
 
-    use data_structures::linked_list::{self, linked_list::LinkedList};
+    use crate::data_structures::linked_list::{self, linked_list::LinkedList};
     use rand::Rng;
 
     pub fn fill_linked_list(
@@ -138,7 +136,10 @@ pub mod ex_02 {
 
     /// Given a linked list of any type (whose data is comparable), remove the duplicates
     /// Without using a separate buffer (like to copy the values or something)
-    pub fn remove_duplicates_no_buffer(list: &mut LinkedList<i32>) {
+    pub fn remove_duplicates_no_buffer<T>(list: &mut LinkedList<T>)
+    where
+        T: std::cmp::PartialEq<T> + Copy + Display,
+    {
         // Go through the linked list, and check every data element against the rest of the list.
 
         let mut current_node = list.root.clone();
