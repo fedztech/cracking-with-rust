@@ -10,4 +10,7 @@ rand = "0.8"
 path = "src/ex_02"
 
 [[include]]
+path = "src/ex_03"
+
+[[include]]
 path = "src/data_structures"
