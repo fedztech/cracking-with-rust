@@ -7,10 +7,16 @@ edition = "2021"
 rand = "0.8"
 
 [[include]]
-path = "src/ex_02"
+path = "src/string"
 
 [[include]]
-path = "src/ex_03"
+path = "src/linked_list"
+
+[[include]]
+path = "src/search"
+
+[[include]]
+path = "src/sort"
 
 [[include]]
 path = "src/data_structures"
